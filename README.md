@@ -26,7 +26,7 @@ if (jumpValue) rb.velocity = new Vector2(0, jumpForce); // Falta comprobar que t
 ### Forma sencilla de comprobar si un cuerpo toca el suelo
 ```c#
 // Es necesario crear una capa (layer) para asignarle
-[SerializeField] private LayerMask jumpableGround;g
+[SerializeField] private LayerMask jumpableGround;
 ...
 private bool isGrounded() => Physics2D.BoxCast(
     coll.bounds.center,
