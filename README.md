@@ -97,7 +97,6 @@ private void UpdateAnimationState()
 
 ### Forma II: manual
 Habría que variar lo anterior para que en lugar de anim.SetInteger(...) utilice [Animator.Play(...)](https://docs.unity3d.com/ScriptReference/Animator.Play.html).
-
 ```c#
 private Animator animator;
 ...
@@ -108,7 +107,6 @@ animator.Play("Idle", -1, 0f);
 
 # Coleccionar items
 El GameObject debe estar marcado con IsTrigger y un Tag (p. ej: "coin" o "moneda"). El callback para manejarlo se llama **OnTriggerEnter2D**:
-
 ```c#
 private void OnTriggerEnter2D(Collider2D collision)
 {
