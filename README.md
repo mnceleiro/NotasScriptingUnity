@@ -90,13 +90,13 @@ private void UpdateAnimationState()
     }
 
     // Haciendolo con el animator de Unity establecemos una variable del animator
-    anim.SetInteger("state", (int)state); 
+    animator.SetInteger("state", (int)state); 
 }
 
 ```
 
 ### Forma II: manual
-Habría que variar lo anterior para que en lugar de anim.SetInteger(...) utilice [Animator.Play(...)](https://docs.unity3d.com/ScriptReference/Animator.Play.html).
+Habría que variar lo anterior para que en lugar de animator.SetInteger(...) utilice [Animator.Play(...)](https://docs.unity3d.com/ScriptReference/Animator.Play.html).
 ```c#
 private Animator animator;
 ...
