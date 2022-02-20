@@ -64,7 +64,7 @@ El sistema que viene con Unity se llama [Mecanim](https://docs.unity3d.com/Manua
 
 ### Forma I: utilizando el animator de Unity
 ```c#
-private Animator anim;
+private Animator animator;
 ...
 private void UpdateAnimationState()
 {
