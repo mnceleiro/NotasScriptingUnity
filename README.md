@@ -141,7 +141,7 @@ private void OnTriggerEnter2D(Collider2D collision)
 }
 ```
 
-### Pantallas de inicio y fin
+# Pantallas de inicio y fin
 Con pocos elementos es sencillo (un panel, textos, imágenes y botones):
 1. Botón derecho -> UI -> Panel.
 2. Botón derecho -> UI -> Text
