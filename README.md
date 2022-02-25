@@ -160,7 +160,7 @@ public void IniciarJuego()
 ```
 
 ## Finalización de juego
-```
+```c#
 public void Salir()
 {
     Application.Quit();
