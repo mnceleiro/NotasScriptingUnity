@@ -106,7 +106,7 @@ animator.Play("Idle", -1, 0f);
 
 
 # Coleccionar items
-El GameObject debe estar marcado con IsTrigger y un Tag (p. ej: "coin" o "moneda"). El callback para manejarlo se llama **OnTriggerEnter2D**:
+El GameObject debe estar marcado con **IsTrigger** y un Tag (p. ej: "coin" o "moneda"). El callback para manejarlo se llama **OnTriggerEnter2D**:
 ```c#
 private void OnTriggerEnter2D(Collider2D collision)
 {
@@ -138,5 +138,31 @@ private void OnTriggerEnter2D(Collider2D collision)
         coins++;
         textCoins.text = "Numero de monedas: " + coins;
     }
+}
+```
+
+### Pantallas de inicio y fin
+Con pocos elementos es sencillo (un panel, textos, imágenes y botones):
+1. Botón derecho -> UI -> Panel.
+2. Botón derecho -> UI -> Text
+3. Botón derecho -> UI -> Image
+4. Botón derecho -> UI -> Button (p. ej: Iniciar juego!)
+
+En el "Button" se puede establecer un script y un método que iniciará el verdadero juego! (la escena del nivel 1). Por ejemplo:
+
+## Inicio de niveles (cualquier nivel)
+
+```c#
+public void IniciarJuego() 
+{
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+}
+```
+
+## Finalización de juego
+```
+public void Salir()
+{
+    Application.Quit();
 }
 ```
